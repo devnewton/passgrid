@@ -1,0 +1,25 @@
+<table class="passgrid">
+    <thead>
+        <tr>
+            <td colspan="{{passgridColspan}}">{{name}}</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each grid}}
+        {{#if @first}}
+        <tr>
+            <th></th>
+            {{#each this}}
+            <th>{{@index_1}}</th>
+            {{/each}}            
+        </tr>
+        {{/if}}
+        <tr>
+            <th>{{@index_1}}</th>
+            {{#each this}}
+            <td>{{this}}</td>
+            {{/each}}
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

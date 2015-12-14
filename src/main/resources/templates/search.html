@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>passgrid search</title>
+        {{> common-head}}
+    </head>
+    <body>
+        {{> search-form}}
+        {{#each passgrids}}
+        <div>
+            <a href="/view/{{this.id}}">{{this.id}}</a>
+        </div>
+        {{/each}}
+    </body>
+</html>

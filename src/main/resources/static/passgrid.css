@@ -1,0 +1,27 @@
+.passgrid {
+    font-family: monospace;
+    width: 8cm;
+    height: 6cm;
+    border-collapse: collapse;
+    border: 1px solid black;
+    float: left;
+    page-break-inside : avoid;
+    margin: 2mm;
+}
+.passgrid th {
+    background-color: #CCCCFF;
+    font-size: 0.8em;
+}
+
+.passgrid td {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: dotted 1px black;
+}
+
+.passgrid tbody tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #CCCCCC;
+}
+.passgrid tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: #CCCCCC;
+}

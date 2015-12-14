@@ -1,0 +1,13 @@
+<h2>Create grid</h2>
+<form action="create" method="POST">
+    <label for="create-passgrid-name" >Name: </label>
+    <input id="create-passgrid-name" type="text" name="name">
+    <label for="create-passgrid-allowed-characters" >Lines: </label>
+    <input id="create-passgrid-allowed-characters" type="text" name="allowedCharacters" value="0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz">
+    <label for="create-passgrid-lines" >Lines: </label>
+    <input id="create-passgrid-lines" type="number" name="lines" value="26">
+    <label for="create-passgrid-columns" >Columns: </label>
+    <input id="create-passgrid-columns" type="number" name="columns" value="10">
+    <input type="hidden" name="{{_csrf.parameterName}}" value="{{_csrf.token}}"/>
+    <input type="submit" >
+</form>
