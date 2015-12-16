@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>passgrid search</title>
-        {{> common-head}}
-    </head>
+    {{> partials/head title="search"}}
     <body>
-        {{> search-form}}
+        {{> partials/header}}
         {{#each passgrids}}
         <div>
-            <a href="/view/{{this.id}}">{{this.id}}</a>
+            {{> partials/passgrid this}}
         </div>
         {{/each}}
     </body>

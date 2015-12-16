@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>passgrid</title>
-        {{> common-head}}
-    </head>
+    {{> partials/head title="search"}}
     <body>
-        {{> search-form}}
-        {{> passgrid passgrid}}
-        {{> create-form}}
+        {{> partials/header}}
+        <a href="/tsv/{{passgrid.id}}">Download TSV</a>
+        {{> partials/passgrid passgrid}}
     </body>
 </html>

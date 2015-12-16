@@ -25,3 +25,15 @@
 .passgrid tbody tr:nth-child(even) td:nth-child(even) {
     background-color: #CCCCCC;
 }
+
+nav ul {
+    list-style-type: none;;
+    display: flex;
+    padding: 0;
+    margin: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
