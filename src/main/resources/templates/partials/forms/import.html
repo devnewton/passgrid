@@ -1,0 +1,7 @@
+<h2>Import grids from html files</h2>
+<form action="/import" method="post" enctype="multipart/form-data">
+    <label for="files-to-import" >Files: </label>
+    <input id="files-to-import" type="file" name="file" multiple>
+    <input type="hidden" name="{{_csrf.parameterName}}" value="{{_csrf.token}}"/>
+    <input type="submit">
+</form>

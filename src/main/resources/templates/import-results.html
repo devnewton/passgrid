@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{> partials/head title="import results"}}
+    <body>
+        {{> partials/header}}
+        {{#each importResults}}
+        <div>
+            <h2>{{filename}}</h2>
+            {{#each passgrids}}
+            <div>
+                {{> partials/passgrid this}}
+            </div>
+            {{/each}}
+            {{error}}
+        </div>
+        {{/each}}
+    </body>
+</html>

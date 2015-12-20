@@ -38,4 +38,15 @@ public class Passgrid {
     public Character[][] getGrid() {
         return grid;
     }
+
+    public boolean isEmpty() {
+        if (null != grid) {
+            for (Character[] row : grid) {
+                if (row.length > 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
