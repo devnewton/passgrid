@@ -2,21 +2,28 @@
 
 passgrid is a KISS password grid generator and manager powered by java, spring boot and mongodb.
 
-## Skill check
+## Build and run demo using [docker](https://www.docker.com/)
+
+    docker build --tag=passgrid https://github.com/devnewton/passgrid.git
+    docker run -p 8080:8080 passgrid
+
+## Build, run and deploy manually
+
+### Skill check
 
 Please note that a thorough knowledge of Java web application development and hosting is required.
 
-## Requirements
+### Requirements
 
 - JDK 7+
 - Maven 3+
 - mongodb 2+
 
-## Build
+### Build
 
     mvn package
 
-## Run locally
+### Run locally
 
 Ensure that mongodb is running and listening on 127.0.0.1 then run:
 
@@ -24,20 +31,14 @@ Ensure that mongodb is running and listening on 127.0.0.1 then run:
 
 The frontend is now accessible on [locahost:8080](http://localhost:8080).
 
-## Deploy and hosting on a production server
+### Deploy and hosting on a production server
 
 There is several options to deploy and host jb3. Here is one that requires:
 
 - a domain name (example: mydomain.me).
 - a web server with http proxy capabilities (example [Cherokee](http://cherokee-project.com/)).
 
-### Application configuration
-
-Edit the application.properties file and change the jb3.host property:
-
-    jb3.host=http://mydomain.me
-
-### Security
+#### Application configuration
 
 In production environnement, please change the following parameters
 
@@ -46,7 +47,7 @@ In production environnement, please change the following parameters
 
 to your application.properties configuration.
 
-### Deployment
+#### Deployment
 
 1. Build and launch passgrid on the server.
 2. Configure your web server to act as reverse proxy on http://localhost:8080
