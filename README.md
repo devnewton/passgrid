@@ -4,8 +4,12 @@ passgrid is a KISS password grid generator and manager powered by java, spring b
 
 ## Build and run demo using [docker](https://www.docker.com/)
 
+Run the following commands:
+
     docker build --tag=passgrid https://github.com/devnewton/passgrid.git
     docker run -p 8080:8080 passgrid
+
+Then access to the passgrid application using a web browser on http://localhost:8080
 
 ## Build, run and deploy manually
 
